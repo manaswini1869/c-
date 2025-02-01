@@ -62,12 +62,31 @@ int main() {
     //     break;
     // }
 
-    char op;
+    // ternary operator
 
-    double num1;
-    double num2;
-    double result;
+    // int grade;
 
+    // std::cout << "Enter your grade: ";
+    // std::cin >> grade;
+
+    // grade >= 60 ? std::cout << "You Passed!" : std::cout << "You Failed!";
+
+    // logical operators &&, ||, !
+    int temp;
+    bool sunny;
+    std::cout << "Whats the temperature: ";
+    std::cin >> temp;
+    if (temp <= 0 || temp >= 30) {
+        std::cout << "Its cold" << std::endl;
+    } else {
+        std::cout << "Its not cold" << std::endl;
+    }
+
+    if (sunny) {
+        std::cout << "Its sunny" << std::endl;
+    } else {
+        std::cout << "Its not sunny" << std::endl;
+    }
 
     return 0;
 }
