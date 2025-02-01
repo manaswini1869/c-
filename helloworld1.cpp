@@ -1,4 +1,12 @@
 #include <iostream>
+#include <vector>
+
+typedef std::vector<std::pair<std::string, int>> pairlist_t;
+// typedef std::string text_t;
+// typedef int number_t;
+
+using text_t = std::string;
+using number_t = int;
 
 namespace first{
     int m = 1;
@@ -60,6 +68,15 @@ int main() {
     std::cout << "\n" << "Printing x " <<m; // if not declared explicitly we will be using the local version of the variable
 
     std:: cout << m; // the double colon here is the scope resolution
+
+    // typedef = reserved keyword used to create an additional name (alias) for another date type. New identifier for
+    // an existing type. Helps with readability and reduces types
+    // helps in code readability and helps in typos
+    pairlist_t pairlist;
+    text_t hello = "Hello World!";
+    std::cout << "\n" << hello;
+    number_t age = 22;
+    std::cout << "\n" << age;
 
     return 0;
 }
